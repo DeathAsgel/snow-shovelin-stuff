@@ -1,0 +1,114 @@
+game.StarterGui:SetCore("SendNotification", {
+Title = "",
+Text = "Script made by s_tompy/Ophiion || UI library by xHeptc",
+Duration = "1",
+})
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("snow shoveling simulator gui", "Synapse")
+local Autofarm = Window:NewTab("autofarm")
+local AutofarmSection = Autofarm:NewSection("autofarm features")
+AutofarmSection:NewButton("Tool modify", "modifies your tool so u can farm really quick", function()
+local LocalPlayer = game:GetService('Players').LocalPlayer
+local RemoteEvents = game:GetService('ReplicatedStorage').RemoteEvents
+local Shovel = function(Part)
+if LocalPlayer.Character:FindFirstChildWhichIsA('Tool') then
+RemoteEvents.Shovel:FireServer(Part)
+end
+end
+local GetCloseSnow = function()
+local Center = LocalPlayer.Character.HumanoidRootPart.CFrame.p
+local Region = Region3.new(Center-Vector3.new(15, 15, 15), Center+Vector3.new(40,40,40))
+local Parts  = workspace:FindPartsInRegion3(Region, LocalPlayer.Character, 700)
+local Snow = {}
+for i, v in pairs(Parts) do
+if v.Name == 'Snow' then
+table.insert(Snow, v)
+end
+end
+return Snow
+end
+
+while wait() do
+for i, v in pairs(GetCloseSnow()) do
+Shovel(v)
+end
+end
+
+end)
+AutofarmSection:NewToggle("auto sell", "once toggled auto sells your snow if you walk close to frosty", function(state)
+    if state then
+_G.autosell = true;
+while _G.autosell == true do
+    wait()
+local args = {
+    [1] = true
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SellSnow:FireServer(unpack(args))
+end
+
+    else
+_G.autosell = false;
+while _G.autosell == true do
+    wait()
+local args = {
+    [1] = true
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SellSnow:FireServer(unpack(args))
+end
+
+    end
+end)
+AutofarmSection:NewToggle("autofarm", "once toggled hold your tool out and it will tp you around the map and collect snow automaticall, then tp back to frosty and sell for you", function(state)
+    if state then
+_G.autotp = true
+while _G.autotp == true do
+wait()
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local frosty = CFrame.new(306.2092590332031, 3.654571294784546, -100.8083724975586)
+local plot = CFrame.new(-433.16583251953125, 3.654604434967041, -11.574700355529785)
+local pos = CFrame.new(-134.8895263671875, 3.6541616916656494, 280.4970397949219)
+local pos2 = CFrame.new(-133.06304931640625, 3.65484619140625, -165.89385986328125)
+local pos3 = CFrame.new(130.31468200684, 3.6545722484589, 278.53161621094)
+local pos4 = CFrame.new(-130.40042114258, 3.6545784473419, 46.772399902344)
+local pos5 = CFrame.new(-130.41763305664, 3.6545712947845, 46.781940460205)
+local pos6 = CFrame.new(-413.51623535156, 3.6545751094818, -36.287700653076)
+local pos7 = CFrame.new(-542.70129394531, 3.6544859409332, 112.75436401367)
+local pos8 = CFrame.new(-607.36358642578, 3.6545674800873, 209.0157623291)
+pl.CFrame = plot
+wait(0.3)
+pl.CFrame = pos
+wait(0.3)
+pl.CFrame = pos2
+wait(0.3)
+pl.CFrame = frosty
+wait(30)
+end
+
+    else
+_G.autotp = false
+    end
+end)
+local Misc = Window:NewTab("Misc")
+local MiscSection = Misc:NewSection("miscellaneous stuff")
+MiscSection:NewButton("redeem all codes", "Redeems all ingame codes", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/DeathAsgel/sss-redeem-codes/main/redeem'),true))() 
+end)
+MiscSection:NewButton("Claim halloween event items", "Claims old halloween event items for you", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/DeathAsgel/snow-shovelin-stuff/main/claim%20halloween%20items'),true))()
+end)
+MiscSection:NewButton("Claim easter event items", "Gives you easter event items", function()
+local args = {[1] = "Easter Staff"}
+game:GetService("ReplicatedStorage").RemoteEvents.BuyShovel:FireServer(unpack(args))
+-----------------------------------------
+local args = {[1] = "Easter Shovel"}
+game:GetService("ReplicatedStorage").RemoteEvents.BuyShovel:FireServer(unpack(args))
+end)
+MiscSection:NewButton("Claim robux pet", "Gives you the Otherworldly Pet that costs robux normally", function()
+local args = {[1] = "Otherworldly Pet"}
+game:GetService("ReplicatedStorage").RemoteEvents.BuyPet:FireServer(unpack(args))
+end)
+MiscSection:NewKeybind("UI keybind", "click to edit, pickwhatever keybind u want", Enum.KeyCode.RightControl, function()
+	Library:ToggleUI()
+end)
