@@ -1,0 +1,8 @@
+local args = {[1] = "Jack O' Bomb"}
+game:GetService("ReplicatedStorage").RemoteEvents.BuyShovel:FireServer(unpack(args))
+-------------------------------------------------------------------------------
+local args = {[1] = "Staff Of The Dead"}
+game:GetService("ReplicatedStorage").RemoteEvents.BuyShovel:FireServer(unpack(args))
+----------------------------------------------------------------------------------
+local args = {[1] = "Coffin Car"}
+game:GetService("ReplicatedStorage").RemoteEvents.BuyVehicle:FireServer(unpack(args))
