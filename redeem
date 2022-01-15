@@ -1,0 +1,194 @@
+------------
+local args = {
+    [1] = "15mVisits"
+}
+
+game:GetService("ReplicatedStorage").Network.Codes.ClaimCode:InvokeServer(unpack(args))
+-----------------------
+
+local args = {
+    [1] = "darMoney"
+}
+
+game:GetService("ReplicatedStorage").Network.Codes.ClaimCode:InvokeServer(unpack(args))
+---------------------------------
+
+local args = {
+    [1] = "tvdude"
+}
+
+game:GetService("ReplicatedStorage").Network.Codes.ClaimCode:InvokeServer(unpack(args))
+----------------------------------------
+
+local args = {
+    [1] = "DiamondSnow"
+}
+
+game:GetService("ReplicatedStorage").Network.Codes.ClaimCode:InvokeServer(unpack(args))
+----------------------------------------
+
+local args = {
+    [1] = "150kLikes"
+}
+
+game:GetService("ReplicatedStorage").Network.Codes.ClaimCode:InvokeServer(unpack(args))
+-----------------------------------------
+
+local args = {
+    [1] = "gearHead"
+}
+
+game:GetService("ReplicatedStorage").Network.Codes.ClaimCode:InvokeServer(unpack(args))
+-----------------------------------------
+local args = {
+    [1] = "GimmieIce"
+}
+
+game:GetService("ReplicatedStorage").Network.Codes.ClaimCode:InvokeServer(unpack(args))
+--------------------------------------------
+
+local args = {
+    [1] = "40m"
+}
+
+game:GetService("ReplicatedStorage").Network.Codes.ClaimCode:InvokeServer(unpack(args))
+--------------------------------------------
+
+local args = {
+    [1] = "500k"
+}
+
+game:GetService("ReplicatedStorage").Network.Codes.ClaimCode:InvokeServer(unpack(args))
+--------------------------------------------
+
+local args = {
+    [1] = "matrix"
+}
+
+game:GetService("ReplicatedStorage").Network.Codes.ClaimCode:InvokeServer(unpack(args))
+--------------------------------------------
+
+local args = {
+    [1] = "1Month"
+}
+
+game:GetService("ReplicatedStorage").Network.Codes.ClaimCode:InvokeServer(unpack(args))
+--------------------------------------------
+local args = {
+    [1] = "burrr"
+}
+
+game:GetService("ReplicatedStorage").Network.Codes.ClaimCode:InvokeServer(unpack(args))
+--------------------------------------------
+
+local args = {
+    [1] = "iceySlopes"
+}
+
+game:GetService("ReplicatedStorage").Network.Codes.ClaimCode:InvokeServer(unpack(args))
+--------------------------------------------
+
+local args = {
+    [1] = "iceySlopes2"
+}
+
+game:GetService("ReplicatedStorage").Network.Codes.ClaimCode:InvokeServer(unpack(args))
+--------------------------------------------
+
+local args = {
+    [1] = "2018"
+}
+
+game:GetService("ReplicatedStorage").Network.Codes.ClaimCode:InvokeServer(unpack(args))
+--------------------------------------------
+
+local args = {
+    [1] = "WhatLiesBelow"
+}
+
+game:GetService("ReplicatedStorage").Network.Codes.ClaimCode:InvokeServer(unpack(args))
+--------------------------------------------
+
+local args = {
+    [1] = "IceCreature"
+}
+
+game:GetService("ReplicatedStorage").Network.Codes.ClaimCode:InvokeServer(unpack(args))
+--------------------------------------------
+
+local args = {
+    [1] = "RedTail"
+}
+
+game:GetService("ReplicatedStorage").Network.Codes.ClaimCode:InvokeServer(unpack(args))
+--------------------------------------------
+
+local args = {
+    [1] = "AFlyingAnt"
+}
+
+game:GetService("ReplicatedStorage").Network.Codes.ClaimCode:InvokeServer(unpack(args))
+--------------------------------------------
+
+local args = {
+    [1] = "TheAnt"
+}
+
+game:GetService("ReplicatedStorage").Network.Codes.ClaimCode:InvokeServer(unpack(args))
+--------------------------------------------
+
+local args = {
+    [1] = "yespls"
+}
+
+game:GetService("ReplicatedStorage").Network.Codes.ClaimCode:InvokeServer(unpack(args))
+--------------------------------------------
+
+local args = {
+    [1] = "z"
+}
+
+game:GetService("ReplicatedStorage").Network.Codes.ClaimCode:InvokeServer(unpack(args))
+--------------------------------------------
+
+local args = {
+    [1] = "50k"
+}
+
+game:GetService("ReplicatedStorage").Network.Codes.ClaimCode:InvokeServer(unpack(args))
+--------------------------------------------
+
+local args = {
+    [1] = "o"
+}
+
+game:GetService("ReplicatedStorage").Network.Codes.ClaimCode:InvokeServer(unpack(args))
+--------------------------------------------
+
+local args = {
+    [1] = "e"
+}
+
+game:GetService("ReplicatedStorage").Network.Codes.ClaimCode:InvokeServer(unpack(args))
+--------------------------------------------
+
+local args = {
+    [1] = "ToInfinity"
+}
+
+game:GetService("ReplicatedStorage").Network.Codes.ClaimCode:InvokeServer(unpack(args))
+--------------------------------------------
+
+local args = {
+    [1] = "AndBeyond"
+}
+
+game:GetService("ReplicatedStorage").Network.Codes.ClaimCode:InvokeServer(unpack(args))
+--------------------------------------------
+
+local args = {
+    [1] = "Icey Snow	"
+}
+
+game:GetService("ReplicatedStorage").Network.Codes.ClaimCode:InvokeServer(unpack(args))
+--------------------------------------------
