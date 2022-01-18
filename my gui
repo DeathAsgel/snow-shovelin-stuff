@@ -17,7 +17,7 @@ end
 end
 local GetCloseSnow = function()
 local Center = LocalPlayer.Character.HumanoidRootPart.CFrame.p
-local Region = Region3.new(Center-Vector3.new(15, 15, 15), Center+Vector3.new(40,40,40))
+local Region = Region3.new(Center-Vector3.new(11, 11, 11), Center+Vector3.new(25,25,25))
 local Parts  = workspace:FindPartsInRegion3(Region, LocalPlayer.Character, 700)
 local Snow = {}
 for i, v in pairs(Parts) do
@@ -31,6 +31,7 @@ end
 while wait() do
 for i, v in pairs(GetCloseSnow()) do
 Shovel(v)
+end
 end
 end
 
