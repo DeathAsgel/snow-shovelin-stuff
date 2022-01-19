@@ -33,8 +33,6 @@ for i, v in pairs(GetCloseSnow()) do
 Shovel(v)
 end
 end
-end
-
 end)
 AutofarmSection:NewToggle("auto sell", "once toggled auto sells your snow if you walk close to frosty", function(state)
     if state then
